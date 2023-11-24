@@ -10,19 +10,19 @@ main {
 }
 
 .display {
+  background-color: #DCEDC2;
+  text-align: end;
   width: 240px;
-  padding: 20px;
+  margin: 20px;
 }
 
 #calculation {
-  background-color: white;
-  text-align: end;
+  margin: 0;
   font-size: 20px;
 }
 
 #curent-result {
-  background-color: #DCEDC2;
-  text-align: end;
+  margin: 0;
   font-size: 40px;
 }
 
