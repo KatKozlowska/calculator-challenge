@@ -1,1 +1,28 @@
-/*# sourceMappingURL=mian.css.map */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 500px;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+}
+
+.display {
+  width: 240px;
+}
+
+#calculation {
+  background-color: white;
+  text-align: end;
+}
+
+#curent-result {
+  background-color: white;
+  text-align: end;
+}/*# sourceMappingURL=mian.css.map */
