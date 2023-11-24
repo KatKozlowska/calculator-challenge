@@ -3,8 +3,27 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: grey;
-  width: 500px;
+  background-color: #a8e4e6;
+  width: 300px;
+  height: 500px;
+  border: 3px solid rgb(92, 196, 231);
+}
+
+.display {
+  width: 240px;
+  padding: 20px;
+}
+
+#calculation {
+  background-color: white;
+  text-align: end;
+  font-size: 20px;
+}
+
+#curent-result {
+  background-color: #DCEDC2;
+  text-align: end;
+  font-size: 40px;
 }
 
 .numpad {
@@ -13,16 +32,25 @@ main {
   grid-template-rows: 60px 60px 60px 60px 60px;
 }
 
-.display {
-  width: 240px;
+button {
+  border-radius: 50%;
+  margin: 2px;
+  border: none;
+  box-shadow: 3px 3px 3px #71030a;
 }
 
-#calculation {
-  background-color: white;
-  text-align: end;
+#num1, #num2, #num3,
+#num4, #num5, #num6,
+#num7, #num8, #num9, #num0 {
+  background-color: #FFD3B5;
 }
 
-#curent-result {
-  background-color: white;
-  text-align: end;
+#clear, #plus-minus, #multiply, #divide,
+#percentage, #add, #subtract, #backspace,
+#decimal {
+  background-color: #FFAAA6;
+}
+
+#equals {
+  background-color: #FF8C94;
 }/*# sourceMappingURL=mian.css.map */

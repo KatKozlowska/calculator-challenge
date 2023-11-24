@@ -1,0 +1,18 @@
+
+@use "./variables" as *;
+
+.display {
+    width: 240px;
+   padding:20px;
+}
+#calculation {
+    background-color: white;
+    text-align: end;
+    font-size: 20px;
+}
+
+#curent-result {
+    background-color:$result-display-color;
+    text-align: end;
+    font-size: 40px;
+}
