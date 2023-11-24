@@ -11,9 +11,14 @@
 }
 button{
     border-radius: 50%;
-    margin:2px;
+    margin:4px;
     border:none;
     box-shadow: 3px 3px 3px #71030a;
+}
+
+button:hover {
+    
+    transform:scale(1.15);
 }
 
 #num1, #num2, #num3, 

@@ -7,15 +7,22 @@
     background-color:$calculation-display-color;
     text-align: end;
     width: 240px;
-    margin:20px;
+    margin:25px;
+    border-radius: 15px;
+    border: solid 1.5px #abc588 ;
+    box-shadow: 3px 3px 3px #4c573d;
    
 }
+
+
 #calculation {
     margin:0;
     font-size: 20px;
+    padding:5px 10px ;
 }
 
 #curent-result {
     margin:0;
     font-size: 40px;
+    padding:5px 10px;
 }
