@@ -16,9 +16,9 @@ let num2 = "";
 let answer = 0;
 
 
-// This function is the working code.
+// This bit makes it so when i press button it does the magic.
+
 const handleButtonClick = (event: Event) => {
-   // my event occurs on a html button > assign as button
    const button = event.currentTarget as HTMLButtonElement;
    const buttonText = button.textContent as string;  //as keyword means youre casting 
 
@@ -34,6 +34,16 @@ const handleButtonClick = (event: Event) => {
          console.log("Num1: " + num1);
       } else if (num1 && operator) {
          num2 += buttonText
+         console.log("Num2: " + num2);
+      }
+
+      resultDisplay.innerText = button.textContent as string;
+   } else if (button.classList.contains("backspace") ) {
+      if(!operator){
+         num1 = num1.slice(0, -1);
+         console.log("Num1: " + num1);
+      } else if (num1 && operator) {
+         num2 = num2.slice(0,-1);
          console.log("Num2: " + num2);
       }
 
@@ -58,15 +68,14 @@ const handleButtonClick = (event: Event) => {
             answer = value1 * value2;
             break;
       }
-
       console.log("Answer: " + answer);      
    }
 
+// this bit updates the displays 
    num1Display.innerText = "" + num1;
    operatorDisplay.innerText = operator;
    num2Display.innerText  = "" + num2;
-   resultDisplay.innerText = "" + answer;
-   
+   resultDisplay.innerText = "" + answer; 
 };
 // for every button we found earlier
 
