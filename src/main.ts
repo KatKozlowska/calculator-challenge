@@ -81,10 +81,11 @@ const handleButtonClick = (event: Event) => {
       alert("Your number is too long");
    };
 
-   if (button.classList.contains("decimal") && button.innerHTML.includes (".")){
-   (num1 += buttonText);
-   
-   };
+   // if (button.classList.contains("decimal") && button.innerHTML.includes (".")){
+   // (num1 += buttonText);
+   // } else if (button.classList.contains("operator") && button.classList.contains("decimal") && button.innerHTML.includes (".")){
+   //    (num2 += buttonText);
+   // };
    
 // this bit updates the displays 
    num1Display.innerText = "" + num1;
