@@ -30,10 +30,12 @@ const handleButtonClick = (event: Event) => {
       operator = "";
    } else if (button.classList.contains("number") ) {
       if(!operator){
-         num1 += buttonText;
+         if(button.id != "decimal" || (button.id == "decimal" && !num1.includes("."))) {
+         num1 += buttonText;};
          console.log("Num1: " + num1);
       } else if (num1 && operator) {
-         num2 += buttonText
+         if(button.id != "decimal" || (button.id == "decimal" && !num2.includes("."))) {
+         num2 += buttonText; };
          console.log("Num2: " + num2);
       }
       resultDisplay.innerText = button.textContent as string;
@@ -79,22 +81,15 @@ const handleButtonClick = (event: Event) => {
       num1 = num1.slice(0,8);
       num2 = num2.slice(10,18);
       alert("Your number is too long");
+
    };
 
-   // if (button.classList.contains("decimal") && button.innerHTML.includes (".")){
-   // (num1 += buttonText);
-   // } else if (button.classList.contains("operator") && button.classList.contains("decimal") && button.innerHTML.includes (".")){
-   //    (num2 += buttonText);
-   // };
-   
 // this bit updates the displays 
    num1Display.innerText = "" + num1;
    operatorDisplay.innerText = operator;
    num2Display.innerText  = "" + num2;
    resultDisplay.innerText = "" + answer; 
 };
-
-
 
 // for every button we found earlier
 
