@@ -27,3 +27,24 @@
     font-size: 40px;
     padding:0 20px;
 }
+
+@media screen and (min-width: $tablet){
+    
+    .display {
+        width: 400px;
+        margin:25px;
+        box-shadow: 5px 5px 5px rgb(60, 26, 118) ;
+        
+        &__result {
+            margin:10px 0 ;
+            font-size: 50px;
+            padding:0 20px;
+        }
+
+        &__calculation {
+            font-size: 25px;
+        }
+    }
+  
+
+}

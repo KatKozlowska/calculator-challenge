@@ -11,6 +11,12 @@ main {
   box-shadow: 10px 10px 10px rgb(60, 26, 118);
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    width: 500px;
+    height: 800px;
+  }
+}
 .display {
   background-color: #B4BDFF;
   text-align: end;
@@ -33,6 +39,21 @@ main {
   padding: 0 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .display {
+    width: 400px;
+    margin: 25px;
+    box-shadow: 5px 5px 5px rgb(60, 26, 118);
+  }
+  .display__result {
+    margin: 10px 0;
+    font-size: 50px;
+    padding: 0 20px;
+  }
+  .display__calculation {
+    font-size: 25px;
+  }
+}
 .numpad {
   display: grid;
   grid-template-columns: 60px 60px 60px 60px;
@@ -50,11 +71,12 @@ button {
 }
 
 button:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
+  transition-delay: linear 500ms;
 }
 
 #num1, #num2, #num3,
-#num4, #num5, #num6,
+#num4, #num5, #num6, #equals,
 #num7, #num8, #num9, #num0 {
   background-color: #FFD28F;
 }
@@ -65,10 +87,21 @@ button:hover {
   background-color: #FFE3BB;
 }
 
-#equals {
-  background-color: #FFD28F;
+@media screen and (min-width: 768px) {
+  .numpad {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+  }
+  button {
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(60, 26, 118);
+    font-size: 30px;
+  }
+  button:hover {
+    color: #EBA363;
+  }
 }
-
 body {
   height: 100vh;
   display: flex;
