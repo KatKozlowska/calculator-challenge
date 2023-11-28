@@ -4,6 +4,7 @@
 
 
 .display{
+    
     background-color:$calculation-display-color;
     text-align: end;
     width: 240px;
@@ -11,18 +12,19 @@
     border-radius: 15px;
     border: solid 1.5px #abc588 ;
     box-shadow: 3px 3px 3px #4c573d;
-   
+    &__calculation{
+        
+        padding:0 20px;
+        display: flex;
+        justify-content: end;
+    }
 }
 
 
-#calculation {
-    margin:0;
-    font-size: 20px;
-    padding:5px 10px ;
-}
 
-#curent-result {
+
+.display__result {
     margin:0;
     font-size: 40px;
-    padding:5px 10px;
+    padding:0 20px;
 }

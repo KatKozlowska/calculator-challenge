@@ -20,17 +20,16 @@ main {
   border: solid 1.5px #abc588;
   box-shadow: 3px 3px 3px #4c573d;
 }
-
-#calculation {
-  margin: 0;
-  font-size: 20px;
-  padding: 5px 10px;
+.display__calculation {
+  padding: 0 20px;
+  display: flex;
+  justify-content: end;
 }
 
-#curent-result {
+.display__result {
   margin: 0;
   font-size: 40px;
-  padding: 5px 10px;
+  padding: 0 20px;
 }
 
 .numpad {
