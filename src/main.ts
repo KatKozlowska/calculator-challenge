@@ -36,7 +36,6 @@ const handleButtonClick = (event: Event) => {
          num2 += buttonText
          console.log("Num2: " + num2);
       }
-
       resultDisplay.innerText = button.textContent as string;
    } else if (button.classList.contains("backspace") ) {
       if(!operator){
@@ -46,14 +45,13 @@ const handleButtonClick = (event: Event) => {
          num2 = num2.slice(0,-1);
          console.log("Num2: " + num2);
       }
-
       resultDisplay.innerText = button.textContent as string;
    } else if (button.classList.contains("operator")) {
          operator = buttonText
          console.log("Operator: " + operator);
    } else if (button.classList.contains("equals")) {
-      let value1:number = parseInt(num1);
-      let value2:number = parseInt(num2);
+      let value1:number = parseFloat(num1);
+      let value2:number = parseFloat(num2);
       switch (operator) {
          case "+":
             answer= value1 + value2;
@@ -68,15 +66,35 @@ const handleButtonClick = (event: Event) => {
             answer = value1 * value2;
             break;
       }
-      console.log("Answer: " + answer);      
+      console.log("Answer: " + answer);   
+    
    }
 
+   // this bit handles errors
+
+   if (isNaN(answer)) {
+      answer= + "";
+      alert("Please enter a valid quation");
+    } else if ( num1.length > 8 || num2.length > 8 ) {
+      num1 = num1.slice(0,8);
+      num2 = num2.slice(10,18);
+      alert("Your number is too long");
+   };
+
+   if (button.classList.contains("decimal") && button.innerHTML.includes (".")){
+   (num1 += buttonText);
+   
+   };
+   
 // this bit updates the displays 
    num1Display.innerText = "" + num1;
    operatorDisplay.innerText = operator;
    num2Display.innerText  = "" + num2;
    resultDisplay.innerText = "" + answer; 
 };
+
+
+
 // for every button we found earlier
 
 buttons.forEach((button) => button.addEventListener("click", handleButtonClick));

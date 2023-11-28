@@ -4,4 +4,11 @@
 @use "./display";
 @use "./buttons";
 
-
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,210,143);
+    background: linear-gradient(90deg, rgba(255,210,143,1) 0%, rgba(255,227,187,1) 37%, rgba(180,189,255,1) 100%);
+}

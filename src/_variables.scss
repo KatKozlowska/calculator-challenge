@@ -1,10 +1,11 @@
-
-$body-colour:#a8e4e6;
- $calculation-display-color:#DCEDC2 ;
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+$main-font: 'Major Mono Display', monospace;
+ $body-colour:#83A2FF;
+ $calculation-display-color:#B4BDFF;
  $result-display-color:#DCEDC2;
- $number-button-color: #FFD3B5 ;
- $operator-button-color: #FFAAA6;
- $equals-button-color:#FF8C94;
+ $number-button-color: #FFD28F ;
+ $operator-button-color: #FFE3BB;
+ $equals-button-color:#FFD28F;
 
  //coffe
 //#4b3832 • #854442 • #fff4e6 • #3c2f2f • #be9b7b
@@ -14,3 +15,8 @@ $body-colour:#a8e4e6;
 
 //light sunset 
 //A8E6CE   DCEDC2   FFD3B5   FFAAA6   FF8C94 
+
+//#83A2FF
+//#B4BDFF
+//#FFE3BB
+//#FFD28F

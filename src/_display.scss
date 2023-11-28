@@ -3,15 +3,17 @@
 
 
 
-.display{
+.display {
     
     background-color:$calculation-display-color;
     text-align: end;
     width: 240px;
     margin:25px;
     border-radius: 15px;
-    border: solid 1.5px #abc588 ;
-    box-shadow: 3px 3px 3px #4c573d;
+    box-shadow: 3px 3px 3px rgb(60, 26, 118) ;
+    font-family: $main-font;
+    font-weight: bolder;
+
     &__calculation{
         
         padding:0 20px;
@@ -20,11 +22,8 @@
     }
 }
 
-
-
-
 .display__result {
-    margin:0;
+    margin:5px 0 ;
     font-size: 40px;
     padding:0 20px;
 }
