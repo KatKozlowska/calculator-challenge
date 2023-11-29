@@ -27,15 +27,15 @@ The calculator will only perform the calculation once the "=" button is pressed.
 * Responsive Design 
 
 ## Preview 
-*Normal Preview:* 
-![Calculator in lightmode](./screenshots/mobile-lightmode)
+*Normal Preview:* <br />
+![Calculator in lightmode](./screenshots/mobile-lightmode.JPG)
 
 
-*Dark Mode Preview:* 
-![Calculator in lightmode](./screenshots/mobile-darkmode)
+*Dark Mode Preview:* <br />
+![Calculator in lightmode](./screenshots/mobile-darkmode.JPG)
 
-*Tablet Preview:* 
-![Calculator in lightmode](./screenshots/tablet-light)
+*Tablet Preview:* <br />
+![Calculator in lightmode](./screenshots/tablet-light.JPG)
 
 
 
