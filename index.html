@@ -7,13 +7,15 @@
     <title>Calculator Challenge</title>
     <link rel="stylesheet" href="main.css">
   </head>
-  
-  <body>
+ 
+ 
+    <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
       
-<main> 
+  <main> 
+  
   <section class="display">
    <div class="display__calculation">
     <p class = "display__num1">0</p>
@@ -24,8 +26,10 @@
   </section>
 
   <section class="numpad">
-    <button class="clear" id="clear">ac</button>
-    <button class="#" id="plus-minus">+/-</button>
+    <button class="clear special-character" id="clear">ac</button>
+    <button class="dark-mode special-character" id="dark-mode">
+      <img src="src/673863-200.png">
+    </button>
     <button class="operator" id="percentage">%</button>
     <button class="operator" id="divide">/</button>
     <button class="number" id="num7">7</button>
@@ -42,10 +46,9 @@
     <button class="operator" id="add">+</button>
     <button class="number" id="decimal">.</button>
     <button class="number" id="num0">0</button>
-    <button class="backspace" id="backspace">c</button>
-    <button class="equals" id="equals">=</button>
+    <button class="backspace special-character" id="backspace">c</button>
+    <button class="equals special-character" id="equals">=</button>
   </section>
-  
 </main>
 
 </html>

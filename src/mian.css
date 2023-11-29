@@ -6,14 +6,19 @@ main {
   align-items: center;
   background-color: #83A2FF;
   width: 300px;
-  height: 500px;
+  height: 510px;
   border-radius: 25px;
   box-shadow: 10px 10px 10px rgb(60, 26, 118);
 }
 
+.dark-mode-toggle {
+  background-color: #201d1d;
+  box-shadow: 10px 10px 10px black;
+}
+
 @media screen and (min-width: 768px) {
   main {
-    width: 500px;
+    width: 600px;
     height: 800px;
   }
 }
@@ -21,7 +26,7 @@ main {
   background-color: #B4BDFF;
   text-align: end;
   width: 240px;
-  margin: 25px;
+  margin: 10px 0;
   border-radius: 15px;
   box-shadow: 3px 3px 3px rgb(60, 26, 118);
   font-family: "Major Mono Display", monospace;
@@ -37,6 +42,11 @@ main {
   margin: 5px 0;
   font-size: 40px;
   padding: 0 20px;
+}
+
+.dark-mode-toggle .display {
+  background-color: #9a9ce7;
+  box-shadow: 5px 5px 5px black;
 }
 
 @media screen and (min-width: 768px) {
@@ -75,16 +85,28 @@ button:hover {
   transition-delay: linear 500ms;
 }
 
-#num1, #num2, #num3,
-#num4, #num5, #num6, #equals,
-#num7, #num8, #num9, #num0 {
+.number {
   background-color: #FFD28F;
 }
 
-#clear, #plus-minus, #multiply, #divide,
-#percentage, #add, #subtract, #backspace,
-#decimal {
+.operator, .special-character {
   background-color: #FFE3BB;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+}
+
+.dark-mode-toggle .number {
+  background-color: #2f303a;
+  color: white;
+  box-shadow: 3px 3px 3px black;
+}
+.dark-mode-toggle .operator, .dark-mode-toggle .special-character {
+  background-color: #3a4c5a;
+  color: white;
+  box-shadow: 3px 3px 3px black;
 }
 
 @media screen and (min-width: 768px) {
@@ -98,9 +120,6 @@ button:hover {
     box-shadow: 5px 5px 5px rgb(60, 26, 118);
     font-size: 30px;
   }
-  button:hover {
-    color: #EBA363;
-  }
 }
 body {
   height: 100vh;
@@ -109,4 +128,9 @@ body {
   align-items: center;
   background: rgb(255, 210, 143);
   background: linear-gradient(90deg, rgb(255, 210, 143) 0%, rgb(255, 227, 187) 37%, rgb(180, 189, 255) 100%);
+}
+
+.dark-mode-background {
+  background: rgb(154, 156, 231);
+  background: linear-gradient(0deg, rgb(154, 156, 231) 0%, rgb(47, 48, 58) 0%, rgb(99, 101, 143) 100%);
 }/*# sourceMappingURL=mian.css.map */

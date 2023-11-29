@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-$main-font: 'Major Mono Display', monospace;
+
+ $main-font: 'Major Mono Display', monospace;
  $body-colour:#83A2FF;
  $calculation-display-color:#B4BDFF;
- $result-display-color:#DCEDC2;
  $number-button-color: #FFD28F ;
  $operator-button-color: #FFE3BB;
+ $shadow-color: rgb(60, 26, 118);
  $tablet: 768px;
+
+
+ $dark-body:#201d1d;
+ $dark-display:#9a9ce7;
+ $dark-number-button:#2f303a;
+ $dark-operator-button:#3a4c5a;

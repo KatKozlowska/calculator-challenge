@@ -5,10 +5,10 @@ const resultDisplay = document.querySelector<HTMLHeadingElement>(".display__resu
 const num1Display = document.querySelector<HTMLParagraphElement>(".display__num1")
 const num2Display = document.querySelector<HTMLParagraphElement>(".display__num2")
 const operatorDisplay = document.querySelector<HTMLParagraphElement>(".display__operator")
+const main = document.querySelector<HTMLElement>("main")
 
 
-
-if(!buttons || !resultDisplay || !num1Display || !num2Display || !operatorDisplay) {throw new Error ("Error");
+if(!buttons || !resultDisplay || !num1Display || !num2Display || !operatorDisplay || !main) {throw new Error ("Error");
 };
 
 let num1 = "";
@@ -30,6 +30,8 @@ const handleButtonClick = (event: Event) => {
       num2 = "";
       answer = 0;
       operator = "";
+   } else if (button.id === "dark-mode") {
+      themeToggle();
    } else if (button.classList.contains("number") ) {
       if(!operator){
          if(button.id != "decimal" || (button.id == "decimal" && !num1.includes("."))) {
@@ -98,6 +100,10 @@ const handleButtonClick = (event: Event) => {
 };
 
 
- buttons.forEach((button) => button.addEventListener("click", handleButtonClick));
+ buttons.forEach((button) => button.addEventListener("click", handleButtonClick, ));
 
 
+const themeToggle = () => {
+   document.body.classList.toggle("dark-mode-background");
+   main.classList.toggle("dark-mode-toggle");
+}

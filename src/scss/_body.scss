@@ -3,23 +3,27 @@
 
 
 main {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $body-colour;
     width: 300px;
-    height: 500px;
-    
+    height: 510px;
     border-radius: 25px;
-    box-shadow: 10px 10px 10px rgb(60, 26, 118);
+    box-shadow: 10px 10px 10px $shadow-color;
 }
 
-@media screen and (min-width: 768px){ 
+.dark-mode-toggle {
+    background-color:$dark-body ;
+    box-shadow: 10px 10px 10px black;
+}
+
+@media screen and (min-width: 768px) { 
 
     main{
-    width: 500px;
+    width: 600px;
     height: 800px;
     }
-}
+};
+
