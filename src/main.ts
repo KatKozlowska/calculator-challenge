@@ -7,6 +7,7 @@ const num2Display = document.querySelector<HTMLParagraphElement>(".display__num2
 const operatorDisplay = document.querySelector<HTMLParagraphElement>(".display__operator")
 
 
+
 if(!buttons || !resultDisplay || !num1Display || !num2Display || !operatorDisplay) {throw new Error ("Error");
 };
 
@@ -16,13 +17,14 @@ let num2 = "";
 let answer = 0;
 
 
+
 // This bit makes it so when i press button it does the magic.
 
 const handleButtonClick = (event: Event) => {
    const button = event.currentTarget as HTMLButtonElement;
    const buttonText = button.textContent as string;  //as keyword means youre casting 
 
-   if (buttonText == "C") {
+   if (buttonText == "ac") {
       resultDisplay.innerText = "0";
       num1 = "";
       num2 = "";
@@ -62,16 +64,19 @@ const handleButtonClick = (event: Event) => {
             answer =  value1 - value2;
             break;
          case "/":
-            answer = value1 / value2;
+            answer = Math.round((value1 / value2)*100)/100;
             break;
          case "x":
             answer = value1 * value2;
             break;
+         case "%":
+             let percentage = Math.round(((value1/100)* value2)*100)/100;
+             answer = percentage;
+             break;       
       }
       console.log("Answer: " + answer);   
-    
+      
    }
-
    // this bit handles errors
 
    if (isNaN(answer)) {
@@ -81,19 +86,18 @@ const handleButtonClick = (event: Event) => {
       num1 = num1.slice(0,8);
       num2 = num2.slice(10,18);
       alert("Your number is too long");
-
    };
 
 // this bit updates the displays 
    num1Display.innerText = "" + num1;
    operatorDisplay.innerText = operator;
    num2Display.innerText  = "" + num2;
-   resultDisplay.innerText = "" + answer; 
+   resultDisplay.innerText = "" + answer;
+   
+
 };
 
-// for every button we found earlier
 
-buttons.forEach((button) => button.addEventListener("click", handleButtonClick));
-
+ buttons.forEach((button) => button.addEventListener("click", handleButtonClick));
 
 
