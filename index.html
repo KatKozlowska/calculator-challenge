@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Challenge</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" crossorigin src="./assets/index-XDH0NHJv.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-zH0yf5CV.css">
+  </head>
+ 
+ 
+    <body>
+    <div id="app"></div>
+  </body>
+      
+  <main> 
+  
+  <section class="display">
+   <div class="display__calculation">
+    <p class = "display__num1">0</p>
+    <p class="display__operator"></p>
+    <p class = "display__num2"></p>
+  </div>
+    <h1 class = "display__result" id="curent-result">0</h1>
+  </section>
+
+  <section class="numpad">
+    <button class="clear special-character" id="clear">ac</button>
+    <button class="dark-mode special-character" id="dark-mode">
+      <img src="data:image/png;base64,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">
+    </button>
+    <button class="operator" id="percentage">%</button>
+    <button class="operator" id="divide">/</button>
+    <button class="number" id="num7">7</button>
+    <button class="number" id="num8">8</button>
+    <button class="number" id="num9">9</button>
+    <button class="operator" id="multiply">x</button>
+    <button class="number" id="num4">4</button>
+    <button class="number" id="num5">5</button>
+    <button class="number" id="num6">6</button>
+    <button class="operator" id="subtract">-</button>
+    <button class="number" id="num1">1</button>
+    <button class="number" id="num2">2</button>
+    <button class="number" id="num3">3</button>
+    <button class="operator" id="add">+</button>
+    <button class="number" id="decimal">.</button>
+    <button class="number" id="num0">0</button>
+    <button class="backspace special-character" id="backspace">c</button>
+    <button class="equals special-character" id="equals">=</button>
+  </section>
+</main>
+
+</html>
