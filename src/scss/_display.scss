@@ -3,10 +3,10 @@
 
 .display {
     
-    background-color:$calculation-display-color;
+    background-color: $calculation-display-color;
     text-align: end;
     width: 240px;
-    margin:10px 0 ;
+    margin: 10px 0;
     border-radius: 15px;
     box-shadow: 3px 3px 3px rgb(60, 26, 118) ;
     font-family: $main-font;
@@ -14,44 +14,42 @@
 
     &__calculation{
         
-        padding:0 20px;
+        padding: 0 20px;
         display: flex;
         justify-content: end;
       
         
-    }
-}
+    };
+};
 
 .display__result {
-    margin:5px 0 ;
+    margin: 5px 0 ;
     font-size: 40px;
-    padding:0 20px;
-}
+    padding: 0 20px;
+};
 
 .dark-mode-toggle {
     .display {
         background-color: $dark-display;
         box-shadow: 5px 5px 5px black ;
-    }
-}
+    };
+};
 
 @media screen and (min-width: $tablet){
     
     .display {
         width: 400px;
-        margin:25px;
-        box-shadow: 5px 5px 5px $shadow-color ;
+        margin: 25px;
+        box-shadow: 5px 5px 5px $shadow-color;
         
         &__result {
-            margin:10px 0 ;
+            margin: 10px 0 ;
             font-size: 50px;
-            padding:0 20px;
-        }
+            padding: 0 20px;
+        };
 
         &__calculation {
             font-size: 25px;
-        }
-    }
-  
-
+        };
+    };
 };

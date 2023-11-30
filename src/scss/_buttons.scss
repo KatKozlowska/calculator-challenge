@@ -6,9 +6,9 @@
     display: grid; 
     grid-template-columns: 60px 60px 60px 60px;
     grid-template-rows: 60px 60px 60px 60px 60px;
-}
+};
 
-button{ 
+button { 
     border-radius: 50%;
     margin:4px;
     border:none;
@@ -16,26 +16,26 @@ button{
     font-family: $main-font;
     font-weight: 1000;
     font-size:18px;
-}
+};
 
 button:hover {
     transform:scale(1.1);
     transition-delay: linear 500ms;
-}
+};
 
 .number {
     background-color: $number-button-color;
-}
+};
 
 .operator, .special-character {
     background-color: $operator-button-color; 
-}
-
+};
 
 img {
     height: 30px;
     width:30px; 
-}
+};
+
 .dark-mode-toggle {
         
     .number {
@@ -48,23 +48,24 @@ img {
         background-color:$dark-operator-button; 
         color:white;
         box-shadow: 3px 3px 3px black;
-    }
-}
+    };
+};
 
 
 
- @media screen and (min-width:$tablet) {
+@media screen and (min-width:$tablet) {
 
     .numpad {
         display: grid; 
         grid-template-columns: 100px 100px 100px 100px;
         grid-template-rows: 100px 100px 100px 100px 100px;
-    }
-    button{ 
+    };
+
+    button { 
         border-radius: 25px;
         box-shadow: 5px 5px 5px $shadow-color;
         font-size:30px;
-    }
+    };
 
     
 };
